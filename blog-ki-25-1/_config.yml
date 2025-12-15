@@ -4,4 +4,6 @@ baseurl: ""
 url: ""
 theme: minima # Стандартна тема, щоб не писати CSS з нуля (поки що)
 plugins:
+
   - jekyll-feed
+  
