@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # Гілка, куди будуть зберігатися пости
+
+media_folder: "assets/uploads" # Куди завантажувати картинки
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "blog" # Назва колекції
+    label: "Статті"
+    folder: "_posts" # Куди CMS буде створювати файли
+    create: true # Дозволити створювати нові пости
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Формат назви файлу
+    fields: # Поля, які ви будете заповнювати в редакторі
+      - {label: "Заголовок", name: "title", widget: "string"}
+      - {label: "Дата публікації", name: "date", widget: "datetime"}
+      - {label: "Тіло статті", name: "body", widget: "markdown"}

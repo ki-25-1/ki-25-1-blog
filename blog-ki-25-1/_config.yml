@@ -1,0 +1,7 @@
+title: "Блог групи КІ-25-1"
+description: "Новини, розклад та життя нашої групи"
+baseurl: ""
+url: ""
+theme: minima # Стандартна тема, щоб не писати CSS з нуля (поки що)
+plugins:
+  - jekyll-feed
